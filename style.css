@@ -1,19 +1,77 @@
-h1 {
-    text-align: center;
-  }
-  td {
-    width: 100px;
-    height: 100px;
-  }
-  table {
-    margin: 5px auto;
-    border-collapse: collapse
-  }
-  .vert {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-  }
-  .hori {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  }
+body {
+	text-align: center;
+}
+.container {
+	overflow: auto; /* adds a horizontal scroll bar on small phones */
+	margin-bottom: 20px;
+}
+.table-box {
+	position: relative;
+  display: inline-block;
+}
+table {
+	width: 304px;
+	font-size: 50px;
+	border-collapse: collapse;
+	font-family: cursive;
+}
+td {
+	padding: 0px;
+	width: 100px;
+	height: 100px;
+}
+td.hover {
+	background-color: lightgray;
+  cursor: pointer;
+}
+.vert { 
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.hori {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.line {
+	position: absolute;
+}
+.line[class*="row"], .line[class*="col"], .line[class*="diag"] {
+	border: 1px solid black;
+}
+.line[class*="row"] {
+	left: 15px;
+	right: 15px;
+}
+.row-1 {
+	top: 50px;
+}
+.row-2 {
+	top: 152px;
+}
+.row-3 {
+	top: 254px;
+}
+.line[class*="col"] {
+	top: 15px;
+	bottom: 15px;
+}
+.col-1 {
+	left: 50px;
+}
+.col-2 {
+	left: 152px;
+}
+.col-3 {
+	left: 254px;
+}
+.line[class*="diag"] {
+	top: 154px;
+	left: -30px;
+	right: -30px;
+}
+.diag-1 {
+	transform: rotate(45deg);
+}
+.diag-2 {
+	transform: rotate(135deg);
+}

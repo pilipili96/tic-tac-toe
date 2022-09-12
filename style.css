@@ -75,3 +75,16 @@ td.hover {
 .diag-2 {
 	transform: rotate(135deg);
 }
+#reset{
+	border-radius:10px;
+	background-color: rgb(212, 212, 226);
+	border: none;
+
+	padding: 14px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 2px;
+	cursor: pointer;
+}
